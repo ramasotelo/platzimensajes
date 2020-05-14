@@ -27,9 +27,7 @@ public class Main {
             System.out.println("5.Salir.");
             //leemos la opcion del usuario
             opcion = sc.nextInt();//nos permite leer el teclado y guardarlo en opcions
-        }while(opcion != 5);
-        
-        switch(opcion){
+             switch(opcion){
             case 1:
                 mensajesService.crearMensaje();
                 break;
@@ -43,9 +41,10 @@ public class Main {
                 mensajesService.borrarMensaje();
                 break;
             default:
-                System.out.println("");
                 break;
-            
         }
+        }while(opcion != 5);
+        
+       
     }
 }
